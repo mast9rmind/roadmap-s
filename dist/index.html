@@ -7,7 +7,7 @@
   
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="w-screen h-screen bg-[#01142c] overflow-x-hidden">
+<body class="w-screen h-screen bg-[#01142c] overflow-x-hidden ">
 
   <div class="flex flex-col items-center  relative gap-14">
 
@@ -26,7 +26,7 @@
       </p>
     </section>
 
-    <main class="w-11/12 grid grid-cols-xm-col lg:grid-cols-lg-col text-center justify-center gap-10 lg:gap-4">
+    <main class="w-11/12 grid grid-cols-xm-col lg:grid-cols-lg-col text-center justify-center gap-10 lg:gap-4 pb-40">
 
     
       <div class=" flex flex-col gap-5 items-center text-white">
@@ -160,7 +160,50 @@
       </div>
     </main>
 
-    <section>
+    <section class="fixed bottom-0 z-20  left-0 right-0 py-4 bg-[#021d41] text-white">
+
+      <div class="w-11/12 flex  items-center justify-between mx-auto gap-4">
+        <div class="flex items-center gap-1">
+          <svg width="45" height="28" viewBox="0 0 45 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-90">
+            <g filter="url(#filter0_i_1921_1503)"><path d="M13.7287 1.04539C30.2661 0.883268 31.2388 1.20754 31.2388 1.20754C28.6546 3.99854 25.0237 5.58512 21.22 5.58512H14.5393C10.4194 5.58512 6.59483 8.66605 6.1085 12.3946C5.13572 19.8526 12.2695 22.1225 12.2695 22.1225L9.02687 25.8515C9.02687 25.8515 -0.643997 21.5932 1.2445 11.5839C2.86579 2.99097 10.9678 1.07246 13.7287 1.04539Z" fill="#356AF0" stroke="#356AF0" stroke-width="2"></path><path d="M30.9696 26.4546C14.4322 26.6167 13.4594 26.2925 13.4594 26.2925C16.0436 23.5015 19.6746 21.9149 23.4783 21.9149L30.1589 21.9149C34.2788 21.9149 38.1034 18.834 38.5897 15.1054C39.5625 7.64737 32.4287 5.37753 32.4287 5.37753L35.6714 1.64851C35.6714 1.64851 45.3422 5.90683 43.4537 15.9161C41.8324 24.509 33.7304 26.4275 30.9696 26.4546Z" fill="#356AF0" stroke="#356AF0" stroke-width="2"></path></g><defs><filter id="filter0_i_1921_1503" x="-0.000488281" y="0" width="45.6992" height="29.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="1" dy="3"></feOffset><feGaussianBlur stdDeviation="1"></feGaussianBlur><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="shape" result="effect1_innerShadow_1921_1503"></feBlend></filter></defs>
+          </svg>
+          <p class="font-bold">Oraclez</p>
+        </div>
+
+        <nav class="flex-1">
+          <ul id="nav-items" class="fixed inset-0 -z-10 md:z-20  bg-[#0026577a] md:bg-transparent flex flex-col  backdrop-blur-xl md:backdrop-blur-0 md:relative md:flex-row text-3xl md:text-sm items-center justify-center gap-8 text-gray-300 font-semibold hidden">
+            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Home</a>
+            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Support</a>
+            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Contact Us</a>
+            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Platform</a>
+            
+          </ul>
+
+          <div id="menu-btn" class="flex gap-2 items-center justify-center md:hidden bg-[#002657] md:bg-transparent hover:bg-[#09285b] md:hover:bg-transparent cursor-pointer rounded-sm">
+           <div id="menu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+            </svg>
+           </div>
+            <p class="text-sm text-gray-300">Menu Bar</p>
+
+          </div>
+
+        </nav>
+
+        <div class="flex items-center gap-4 md:gap-6">
+          <a href="#">
+            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.45457 1.25887C2.84121 1.21585 3.2198 1.39079 3.43762 1.7131C4.97011 3.98085 6.82006 4.93057 8.87709 5.1552C8.9827 4.27524 9.22486 3.4065 9.6755 2.64289C10.3365 1.52251 11.4064 0.700711 12.9302 0.402947C15.0356 -0.00850654 16.6331 0.76157 17.5575 1.69928L19.4349 1.35848C19.836 1.28569 20.2427 1.45227 20.4775 1.7854C20.7122 2.11853 20.7323 2.55764 20.5289 2.91081L18.7125 6.06467C18.8528 10.6307 17.5675 13.81 14.8511 15.9908C13.4102 17.1475 11.3536 17.7972 9.09885 17.9893C6.82647 18.1829 4.26034 17.921 1.712 17.1623C1.26492 17.0293 0.959857 16.6164 0.963951 16.15C0.968035 15.6835 1.28028 15.276 1.72962 15.1508C3.01504 14.7925 3.99359 14.482 4.87954 13.9356C3.62857 13.263 2.70881 12.3875 2.05981 11.3914C1.15778 10.007 0.828664 8.46719 0.768983 7.07962C0.709312 5.6922 0.916479 4.40854 1.13244 3.48243C1.25538 2.95524 1.39852 2.4257 1.59464 1.92015C1.73708 1.55579 2.06795 1.3019 2.45457 1.25887Z" fill="#33CCFF"></path></svg>
+          </a>
+          <a href="#">
+            <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.852 0.390839C12.8077 0.390839 13.7866 0.415439 14.7363 0.454226L15.8586 0.506915L16.9326 0.569226L17.9383 0.637159L18.8555 0.706719C20.909 0.870381 22.5593 2.43118 22.76 4.46302L22.8045 4.92887L22.8883 5.92735C22.9666 6.96236 23.0245 8.09097 23.0245 9.16925C23.0245 10.2475 22.9666 11.3761 22.8883 12.4111L22.8045 13.4096C22.7898 13.5691 22.775 13.7246 22.76 13.8755C22.5593 15.9073 20.909 17.4681 18.8555 17.6317L17.9383 17.7013L16.9326 17.7692L15.8586 17.8316L14.7363 17.8843C13.7866 17.9231 12.8077 17.9477 11.852 17.9477C10.8963 17.9477 9.91731 17.9231 8.9676 17.8843L7.84534 17.8316L6.7713 17.7692L5.76562 17.7013L4.84847 17.6317C2.79497 17.4681 1.14467 15.9073 0.943875 13.8755L0.899454 13.4096L0.815662 12.4111C0.737312 11.3761 0.679443 10.2475 0.679443 9.16925C0.679443 8.09097 0.737312 6.96236 0.815662 5.92735L0.899454 4.92887C0.914096 4.76943 0.928961 4.61393 0.943875 4.46302C1.14467 2.43118 2.79497 0.870381 4.84847 0.706719L5.76562 0.637159L6.7713 0.569226L7.84534 0.506915L8.9676 0.454226C9.91731 0.415439 10.8963 0.390839 11.852 0.390839ZM9.61746 6.50844V11.8301C9.61746 12.3369 10.1761 12.6536 10.623 12.4003L15.3154 9.73941C15.7623 9.48604 15.7623 8.85246 15.3154 8.59909L10.623 5.93826C10.1761 5.68485 9.61746 6.00162 9.61746 6.50844Z" fill="#FF0000"></path></svg>
+          </a>
+            <a href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2906 0.718597C17.2221 0.790033 19.5406 3.22435 19.4692 6.1558L19.2622 14.6484C19.1908 17.5798 16.7564 19.8983 13.825 19.8269L5.33243 19.6199C2.40099 19.5485 0.082495 17.1141 0.153931 14.1827L0.360887 5.69014C0.432323 2.7587 2.86664 0.440205 5.79809 0.511641L14.2906 0.718597ZM9.91502 5.92297C7.56986 5.86582 5.62241 7.72062 5.56526 10.0658C5.50811 12.4109 7.36291 14.3584 9.70806 14.4155C12.0532 14.4727 14.0007 12.6178 14.0578 10.2727C14.115 7.92757 12.2601 5.98012 9.91502 5.92297ZM9.86328 8.04611C11.0359 8.07469 11.9633 9.04838 11.9347 10.221C11.9061 11.3936 10.9324 12.321 9.7598 12.2924C8.58719 12.2638 7.65983 11.2901 7.6884 10.1175C7.71698 8.9449 8.69067 8.01754 9.86328 8.04611ZM14.7309 4.44703C14.1446 4.43274 13.6577 4.89644 13.6434 5.48273C13.6292 6.06901 14.0928 6.55588 14.6792 6.57017C15.2655 6.58446 15.7523 6.12075 15.7666 5.53447C15.7809 4.94818 15.3172 4.46132 14.7309 4.44703Z" fill="url(#paint0_linear_1921_1510)"></path><defs><linearGradient id="paint0_linear_1921_1510" x1="18.7656" y1="19.9473" x2="0.122974" y2="0.373343" gradientUnits="userSpaceOnUse"><stop stop-color="#FBE18A"></stop><stop offset="0.21" stop-color="#FCBB45"></stop><stop offset="0.38" stop-color="#F75274"></stop><stop offset="0.52" stop-color="#D53692"></stop><stop offset="0.74" stop-color="#8F39CE"></stop><stop offset="1" stop-color="#5B4FE9"></stop></linearGradient></defs></svg>
+            </a>
+          </div>
+
+      </div>
 
 
     </section>
