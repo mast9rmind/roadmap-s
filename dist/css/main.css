@@ -873,8 +873,22 @@ body{
      object-fit: cover;
 }
 
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-5 {
@@ -955,10 +969,6 @@ body{
 
 .duration-150 {
   transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .before\:absolute::before {
@@ -1152,11 +1162,6 @@ body{
 .hover\:bg-\[\#011a3c\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(1 26 60 / var(--tw-bg-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
