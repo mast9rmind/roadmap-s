@@ -3,6 +3,13 @@ module.exports = {
   content: ["./dist/*.html"],
   theme: {
     extend: {
+      colors: {
+        "primary":"#01142c",
+        "secondary":"#021d41",
+        "secondary-op":"#0026577a",
+        "secondary-dark":"#002657",
+        "secondary-light":"#09285b",
+      },
       gridTemplateColumns: {
         // added new column grid 
         'lg-col': 'repeat(6, minmax(150px, 1fr))',

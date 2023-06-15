@@ -4,7 +4,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @layer base{
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #20242e;
+    border-radius: 50px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #343434;
+  }
   body{
     font-family: 'Nunito Sans', sans-serif;
+  }
+}
+
+
+@layer components {
+  .root{
+    @apply flex flex-col items-center  relative gap-14
+  }
+
+  .header{
+    @apply w-5/6 flex flex-col gap-3 items-center pt-10 text-white
+  }
+  .header--title{
+    @apply font-extrabold text-xl lg:text-2xl
+  }
+  .header--desc{
+    @apply text-center text-gray-300 text-[12px] max-w-lg
+  }
+
+  .main-wrapper{
+    @apply w-11/12 grid grid-cols-xm-col lg:grid-cols-lg-col text-center justify-center gap-10 lg:gap-4 pb-40
+  }
+
+  .footer-wrapper{
+    @apply fixed bottom-0 z-20  left-0 right-0 py-4 bg-secondary text-white
+  }
+
+  .footer{
+    @apply w-11/12 flex  items-center justify-between mx-auto gap-4
+  }
+  .socials{
+    @apply flex items-center gap-4 md:gap-6
+  }
+
+  .navbar-wrapper{
+    @apply fixed inset-0 -z-10 md:z-20  bg-secondary-op md:bg-transparent flex flex-col  backdrop-blur-xl md:backdrop-blur-0 md:relative md:flex-row text-3xl md:text-sm items-center justify-center gap-8 text-gray-300 font-semibold
+  }
+
+  .menubar{
+    @apply flex gap-2 items-center justify-center md:hidden bg-secondary-dark md:bg-transparent hover:bg-secondary-light md:hover:bg-transparent cursor-pointer rounded-sm
+  }
+  .nav-item{
+    @apply hover:underline hover:text-white transition-colors duration-200
   }
 }
