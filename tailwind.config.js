@@ -3,10 +3,19 @@ module.exports = {
   content: ["./dist/*.html"],
   theme: {
     extend: {
+      colors: {
+        "primary":"#01142c",
+        "primary-light":"#012048",
+        "secondary":"#021d41",
+        "secondary-op":"#0026577a",
+        "secondary-dark":"#002657",
+        "secondary-light":"#09285b",
+      },
       gridTemplateColumns: {
         // added new column grid 
-        'lg-col': 'repeat(6, minmax(150px, 1fr))',
-        'xm-col': 'repeat(1, minmax(150px, 250px))',
+        'desktop-col': 'repeat(6, minmax(150px, 1fr))',
+        'tablet-col': 'repeat(3, minmax(150px, 250px))',
+        'mobile-col': 'repeat(1, minmax(150px, 250px))',
         
       },
       
