@@ -7,41 +7,44 @@
   
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="w-screen h-screen bg-[#01142c] overflow-x-hidden ">
+<body class="w-screen h-screen bg-primary overflow-x-hidden ">
 
-  <div class="flex flex-col items-center  relative gap-14">
+  <div class="root">
 
-    <section class="w-5/6 flex flex-col gap-3 items-center pt-10 text-white">
-      <svg width="81" height="49" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-75 lg:scale-100">
-        <g filter="url(#a)" fill="#356AF0" stroke="#356AF0" stroke-width="2">
-          <path d="M24.927 1.81c29.875-.294 31.633.292 31.633.292l-.792.855a21.996 21.996 0 0 1-16.141 7.053H26.39c-7.442 0-14.352 5.566-15.23 12.302-1.758 13.473 11.13 17.573 11.13 17.573l-5.858 6.737s-17.47-7.693-14.06-25.775C5.304 5.324 19.94 1.857 24.928 1.81ZM56.073 47.712c-29.875.292-31.633-.293-31.633-.293l.792-.855a21.996 21.996 0 0 1 16.141-7.054H54.61c7.442 0 14.352-5.565 15.23-12.301C71.597 13.736 58.71 9.635 58.71 9.635L64.567 2.9s17.47 7.692 14.06 25.774c-2.93 15.524-17.566 18.99-22.554 19.039Z"></path>
-        </g>
-        <defs>
-          <filter id="a" x="0.932" y="0.727" width="80.137" height="50.066" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="1" dy="3"></feOffset><feGaussianBlur stdDeviation="1"></feGaussianBlur><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix><feBlend in2="shape" result="effect1_innerShadow_1921_1512"></feBlend></filter>
-        </defs>
-      </svg>
-      <h1 class="font-extrabold text-xl lg:text-2xl">Oraclez Platforms Roadmap</h1>
-      <p class="text-center text-gray-300 text-[12px] max-w-lg">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
-      </p>
-    </section>
+    <header class="header">
+        <svg width="81" height="49" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-75 lg:scale-100">
+          <g filter="url(#a)" fill="#356AF9" stroke="#356AF9" stroke-width="2">
+            <path d="M24.927 1.81c29.875-.294 31.633.292 31.633.292l-.792.855a21.996 21.996 0 0 1-16.141 7.053H26.39c-7.442 0-14.352 5.566-15.23 12.302-1.758 13.473 11.13 17.573 11.13 17.573l-5.858 6.737s-17.47-7.693-14.06-25.775C5.304 5.324 19.94 1.857 24.928 1.81ZM56.073 47.712c-29.875.292-31.633-.293-31.633-.293l.792-.855a21.996 21.996 0 0 1 16.141-7.054H54.61c7.442 0 14.352-5.565 15.23-12.301C71.597 13.736 58.71 9.635 58.71 9.635L64.567 2.9s17.47 7.692 14.06 25.774c-2.93 15.524-17.566 18.99-22.554 19.039Z"></path>
+          </g>
+          <defs>
+            <filter id="a" x="0.932" y="0.727" width="80.137" height="50.066" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="1" dy="3"></feOffset><feGaussianBlur stdDeviation="1"></feGaussianBlur><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix><feBlend in2="shape" result="effect1_innerShadow_1921_1512"></feBlend></filter>
+          </defs>
+        </svg>
+        <h1 class="header--title">Oraclez Platforms Roadmap</h1>
+        <p class="header--desc">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+        </p>
+    </header>
 
-    <main class="w-11/12 grid grid-cols-xm-col lg:grid-cols-lg-col text-center justify-center gap-10 lg:gap-4 pb-40">
+
+    <main class="main-wrapper">
 
     
-      <div class=" flex flex-col gap-5 items-center text-white">
-        <div class="w-full h-40 overflow-hidden rounded-lg p-1 border border-[#203B81]">
-          <img class="w-full h-full object-cover rounded-md" src="./assets/images/createtoken.png">
+      <div class="card">
+        <div class="image-outer-wrapper">
+          <div class="image-wrapper">
+          <img class="card-image" src="./assets/images/createtoken.png">
         </div>
-        <div class="bg-[#012048] text-gray-50 relative px-5 py-1 rounded-lg font-bold shadow-xl before:w-5 before:h-[2px] before:bg-blue-600 before:absolute before:rounded-full before:top-0 before:left-1/2 before:-translate-x-1/2 after:w-[6px] after:h-[6px] after:bg-blue-600 after:rounded-full after:absolute after:-top-[2px] after:-translate-x-1/2 after:left-1/2">
+        </div>
+        <div class="card-title card-title--border ">
           <a class="hover:underline" href="#">Oraclez.app</a>
         </div>
 
-        <div class="w-3 h-3 block rounded-full border border-white  bg-blue-600 text-transparent ">.</div>
+        <div class="circle">.</div>
 
         <p class="font-bold">February 2022</p>
         <p class="text-[12px] text-gray-400 leading-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-        <a href="#" class="text-[12px] text-[#356AF0] hover:bg-[#011a3c] flex gap-1 items-center w-full justify-center py-1 rounded-md transition-colors duration-150">
+        <a href="#" class="learn-more-wrapper">
           Learn More
           <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0226 3.27589C12.2736 2.94641 12.7442 2.88281 13.0737 3.13384L19.1987 7.80046C19.3849 7.94232 19.4941 8.16297 19.4941 8.39704C19.4941 8.63111 19.3849 8.85175 19.1987 8.99361L13.0737 13.6603C12.7442 13.9113 12.2736 13.8477 12.0226 13.5182C11.7715 13.1888 11.8351 12.7182 12.1646 12.4671L16.5222 9.14704H2.99414C2.57993 9.14704 2.24414 8.81125 2.24414 8.39704C2.24414 7.98282 2.57993 7.64704 2.99414 7.64704H16.5222L12.1646 4.32699C11.8351 4.07596 11.7715 3.60537 12.0226 3.27589Z" fill="#356AF0"></path>
@@ -51,19 +54,21 @@
       </div>
 
 
-      <div class=" flex flex-col gap-5 items-center text-white relative before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-[450px] before:h-[450px] before:bg-active-item-bg before:rounded-full before:-z-10">
-        <div class="w-fit h-40 overflow-hidden rounded-lg p-1 border border-[#203B81] -translate-y-4 scale-105 relative before:bg-image-border-gradiant before:absolute before:-top-1/2 before:-left-1/2 before:w-[200%] before:h-[200%] before:-z-10 before:bg-slate-900 before:bg-no-repeat before:bg-50% before:bg-right before:animate-spin-slow">
-          <img class="w-full h-full object-cover rounded-md" src="./assets/images/journaltrade.png">
+      <div class="card active-card">
+        <div class="image-outer-wrapper active-image-wrapper animation-rotate-border">
+          <div class="image-wrapper">
+            <img class="card-image" src="./assets/images/journaltrade.png">
+          </div>
         </div>
-        <div class="bg-[#012048] text-gray-50 relative px-5 py-1 rounded-lg font-bold shadow-xl before:w-5 before:h-[2px] before:bg-blue-600 before:absolute before:rounded-full before:top-0 before:left-1/2 before:-translate-x-1/2 after:w-[6px] after:h-[6px] after:bg-blue-600 after:rounded-full after:absolute after:-top-[2px] after:-translate-x-1/2 after:left-1/2 -translate-y-4 scale-105">
+        <div class="card-title active-card-title card-title--border ">
           <a class="hover:underline" href="#">Journal.Trade</a>
         </div>
 
-        <div class="w-3 h-3 block rounded-full border border-white  bg-blue-600 text-transparent relative before:w-6 before:h-6 before:rounded-full before:absolute before:bg-[#203b8170] before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-10">.</div>
+        <div class="circle active-circle">.</div>
 
         <p class="font-bold">March 2022</p>
         <p class="text-[12px] text-gray-400 leading-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-        <a href="#" class="text-[12px] text-[#356AF0] hover:bg-[#011a3c] flex gap-1 items-center w-full justify-center py-1 rounded-md transition-colors duration-150">
+        <a href="#" class="learn-more-wrapper">
           Learn More
           <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0226 3.27589C12.2736 2.94641 12.7442 2.88281 13.0737 3.13384L19.1987 7.80046C19.3849 7.94232 19.4941 8.16297 19.4941 8.39704C19.4941 8.63111 19.3849 8.85175 19.1987 8.99361L13.0737 13.6603C12.7442 13.9113 12.2736 13.8477 12.0226 13.5182C11.7715 13.1888 11.8351 12.7182 12.1646 12.4671L16.5222 9.14704H2.99414C2.57993 9.14704 2.24414 8.81125 2.24414 8.39704C2.24414 7.98282 2.57993 7.64704 2.99414 7.64704H16.5222L12.1646 4.32699C11.8351 4.07596 11.7715 3.60537 12.0226 3.27589Z" fill="#356AF0"></path>
@@ -73,19 +78,21 @@
       </div>
   
 
-      <div class=" flex flex-col gap-5 items-center text-white opacity-40">
-        <div class="w-fit h-40 overflow-hidden rounded-lg p-1 border border-[#203B81]">
-          <img class="w-full h-full object-contain rounded-md" src="./assets/images/persianarmy.png">
+      <div class="card deactive">
+        <div class="image-outer-wrapper">
+          <div class="image-wrapper p-2">
+            <img class="card-image object-contain" src="./assets/images/persianarmy.png">
+          </div>
         </div>
-        <div class="bg-[#012048] text-gray-50 relative px-5 py-1 rounded-lg font-bold shadow-xl before:w-5 before:h-[2px] before:bg-blue-600 before:absolute before:rounded-full before:top-0 before:left-1/2 before:-translate-x-1/2 after:w-[6px] after:h-[6px] after:bg-blue-600 after:rounded-full after:absolute after:-top-[2px] after:-translate-x-1/2 after:left-1/2">
+        <div class="card-title card-title--border">
           <a class="hover:underline" href="#">Persian.Army</a>
         </div>
 
-        <div class="w-3 h-3 block rounded-full border border-blue-600   text-transparent ">.</div>
+        <div class="circle-deactive">.</div>
 
         <p class="font-bold">Coming soon</p>
         <p class="text-[12px] text-gray-400 leading-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-        <a href="#" class="text-[12px] text-[#356AF0] hover:bg-[#011a3c] flex gap-1 items-center w-full justify-center py-1 rounded-md transition-colors duration-150">
+        <a href="#" class="learn-more-wrapper">
           Learn More
           <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0226 3.27589C12.2736 2.94641 12.7442 2.88281 13.0737 3.13384L19.1987 7.80046C19.3849 7.94232 19.4941 8.16297 19.4941 8.39704C19.4941 8.63111 19.3849 8.85175 19.1987 8.99361L13.0737 13.6603C12.7442 13.9113 12.2736 13.8477 12.0226 13.5182C11.7715 13.1888 11.8351 12.7182 12.1646 12.4671L16.5222 9.14704H2.99414C2.57993 9.14704 2.24414 8.81125 2.24414 8.39704C2.24414 7.98282 2.57993 7.64704 2.99414 7.64704H16.5222L12.1646 4.32699C11.8351 4.07596 11.7715 3.60537 12.0226 3.27589Z" fill="#356AF0"></path>
@@ -95,19 +102,21 @@
       </div>
 
 
-      <div class=" flex flex-col gap-5 items-center text-white opacity-40">
-        <div class="w-fit h-40 overflow-hidden rounded-lg p-1 border border-[#203B81]">
-          <img class="w-full h-full object-cover rounded-md" src="./assets/images/battletrade.png">
+      <div class="card deactive">
+        <div class="image-outer-wrapper">
+          <div class="image-wrapper">
+          <img class="card-image" src="./assets/images/battletrade.png">
         </div>
-        <div class="bg-[#012048] text-gray-50 relative px-5 py-1 rounded-lg font-bold shadow-xl before:w-5 before:h-[2px] before:bg-blue-600 before:absolute before:rounded-full before:top-0 before:left-1/2 before:-translate-x-1/2 after:w-[6px] after:h-[6px] after:bg-blue-600 after:rounded-full after:absolute after:-top-[2px] after:-translate-x-1/2 after:left-1/2">
+        </div>
+        <div class="card-title card-title--border">
           <a class="hover:underline" href="#">Battle.Trade</a>
         </div>
 
-        <div class="w-3 h-3 block rounded-full border border-blue-600   text-transparent ">.</div>
+        <div class="circle-deactive">.</div>
 
         <p class="font-bold">Coming soon</p>
         <p class="text-[12px] text-gray-400 leading-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-        <a href="#" class="text-[12px] text-[#356AF0] hover:bg-[#011a3c] flex gap-1 items-center w-full justify-center py-1 rounded-md transition-colors duration-150">
+        <a href="#" class="learn-more-wrapper">
           Learn More
           <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0226 3.27589C12.2736 2.94641 12.7442 2.88281 13.0737 3.13384L19.1987 7.80046C19.3849 7.94232 19.4941 8.16297 19.4941 8.39704C19.4941 8.63111 19.3849 8.85175 19.1987 8.99361L13.0737 13.6603C12.7442 13.9113 12.2736 13.8477 12.0226 13.5182C11.7715 13.1888 11.8351 12.7182 12.1646 12.4671L16.5222 9.14704H2.99414C2.57993 9.14704 2.24414 8.81125 2.24414 8.39704C2.24414 7.98282 2.57993 7.64704 2.99414 7.64704H16.5222L12.1646 4.32699C11.8351 4.07596 11.7715 3.60537 12.0226 3.27589Z" fill="#356AF0"></path>
@@ -117,19 +126,21 @@
       </div>
 
 
-      <div class=" flex flex-col gap-5 items-center text-white opacity-40">
-        <div class="w-fit h-40 overflow-hidden rounded-lg p-1 border border-[#203B81]">
-          <img class="w-full h-full object-contain rounded-md" src="./assets/images/oraclez-wallet.png">
+      <div class="card deactive">
+        <div class="image-outer-wrapper">
+          <div class="image-wrapper">
+          <img class="card-image" src="./assets/images/oraclez-wallet.png">
         </div>
-        <div class="bg-[#012048] text-gray-50 relative px-5 py-1 rounded-lg font-bold shadow-xl before:w-5 before:h-[2px] before:bg-blue-600 before:absolute before:rounded-full before:top-0 before:left-1/2 before:-translate-x-1/2 after:w-[6px] after:h-[6px] after:bg-blue-600 after:rounded-full after:absolute after:-top-[2px] after:-translate-x-1/2 after:left-1/2">
+        </div>
+        <div class="card-title card-title--border">
           <a class="hover:underline" href="#">Oraclez.Wallet</a>
         </div>
 
-        <div class="w-3 h-3 block rounded-full border border-blue-600   text-transparent ">.</div>
+        <div class="circle-deactive">.</div>
 
         <p class="font-bold">Coming soon</p>
         <p class="text-[12px] text-gray-400 leading-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-        <a href="#" class="text-[12px] text-[#356AF0] hover:bg-[#011a3c] flex gap-1 items-center w-full justify-center py-1 rounded-md transition-colors duration-150">
+        <a href="#" class="learn-more-wrapper">
           Learn More
           <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0226 3.27589C12.2736 2.94641 12.7442 2.88281 13.0737 3.13384L19.1987 7.80046C19.3849 7.94232 19.4941 8.16297 19.4941 8.39704C19.4941 8.63111 19.3849 8.85175 19.1987 8.99361L13.0737 13.6603C12.7442 13.9113 12.2736 13.8477 12.0226 13.5182C11.7715 13.1888 11.8351 12.7182 12.1646 12.4671L16.5222 9.14704H2.99414C2.57993 9.14704 2.24414 8.81125 2.24414 8.39704C2.24414 7.98282 2.57993 7.64704 2.99414 7.64704H16.5222L12.1646 4.32699C11.8351 4.07596 11.7715 3.60537 12.0226 3.27589Z" fill="#356AF0"></path>
@@ -138,19 +149,21 @@
 
       </div>
 
-      <div class=" flex flex-col gap-5 items-center text-white opacity-40">
-        <div class="w-fit h-40 overflow-hidden rounded-lg p-1 border border-[#203B81]">
-          <img class="w-full h-full object-contain rounded-md" src="./assets/images/oraclezdex.png">
+      <div class="card deactive">
+        <div class="image-outer-wrapper">
+          <div class="image-wrapper">
+          <img class="card-image" src="./assets/images/oraclezdex.png">
         </div>
-        <div class="bg-[#012048] text-gray-50 relative px-5 py-1 rounded-lg font-bold shadow-xl before:w-5 before:h-[2px] before:bg-blue-600 before:absolute before:rounded-full before:top-0 before:left-1/2 before:-translate-x-1/2 after:w-[6px] after:h-[6px] after:bg-blue-600 after:rounded-full after:absolute after:-top-[2px] after:-translate-x-1/2 after:left-1/2">
+        </div>
+        <div class="card-title card-title--border">
           <a class="hover:underline" href="#">Oraclez.Wallet</a>
         </div>
 
-        <div class="w-3 h-3 block rounded-full border border-blue-600   text-transparent ">.</div>
+        <div class="circle-deactive">.</div>
 
         <p class="font-bold">Coming soon</p>
         <p class="text-[12px] text-gray-400 leading-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-        <a href="#" class="text-[12px] text-[#356AF0] hover:bg-[#011a3c] flex gap-1 items-center w-full justify-center py-1 rounded-md transition-colors duration-150">
+        <a href="#" class="learn-more-wrapper">
           Learn More
           <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0226 3.27589C12.2736 2.94641 12.7442 2.88281 13.0737 3.13384L19.1987 7.80046C19.3849 7.94232 19.4941 8.16297 19.4941 8.39704C19.4941 8.63111 19.3849 8.85175 19.1987 8.99361L13.0737 13.6603C12.7442 13.9113 12.2736 13.8477 12.0226 13.5182C11.7715 13.1888 11.8351 12.7182 12.1646 12.4671L16.5222 9.14704H2.99414C2.57993 9.14704 2.24414 8.81125 2.24414 8.39704C2.24414 7.98282 2.57993 7.64704 2.99414 7.64704H16.5222L12.1646 4.32699C11.8351 4.07596 11.7715 3.60537 12.0226 3.27589Z" fill="#356AF0"></path>
@@ -158,28 +171,29 @@
         </a>
 
       </div>
+      
     </main>
 
-    <section class="fixed bottom-0 z-20  left-0 right-0 py-4 bg-[#021d41] text-white">
+    <footer class="footer-wrapper">
 
-      <div class="w-11/12 flex  items-center justify-between mx-auto gap-4">
+      <div class="footer">
         <div class="flex items-center gap-1">
           <svg width="45" height="28" viewBox="0 0 45 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-90">
             <g filter="url(#filter0_i_1921_1503)"><path d="M13.7287 1.04539C30.2661 0.883268 31.2388 1.20754 31.2388 1.20754C28.6546 3.99854 25.0237 5.58512 21.22 5.58512H14.5393C10.4194 5.58512 6.59483 8.66605 6.1085 12.3946C5.13572 19.8526 12.2695 22.1225 12.2695 22.1225L9.02687 25.8515C9.02687 25.8515 -0.643997 21.5932 1.2445 11.5839C2.86579 2.99097 10.9678 1.07246 13.7287 1.04539Z" fill="#356AF0" stroke="#356AF0" stroke-width="2"></path><path d="M30.9696 26.4546C14.4322 26.6167 13.4594 26.2925 13.4594 26.2925C16.0436 23.5015 19.6746 21.9149 23.4783 21.9149L30.1589 21.9149C34.2788 21.9149 38.1034 18.834 38.5897 15.1054C39.5625 7.64737 32.4287 5.37753 32.4287 5.37753L35.6714 1.64851C35.6714 1.64851 45.3422 5.90683 43.4537 15.9161C41.8324 24.509 33.7304 26.4275 30.9696 26.4546Z" fill="#356AF0" stroke="#356AF0" stroke-width="2"></path></g><defs><filter id="filter0_i_1921_1503" x="-0.000488281" y="0" width="45.6992" height="29.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="1" dy="3"></feOffset><feGaussianBlur stdDeviation="1"></feGaussianBlur><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="shape" result="effect1_innerShadow_1921_1503"></feBlend></filter></defs>
           </svg>
           <p class="font-bold">Oraclez</p>
-        </div>
+      </div>
 
         <nav class="flex-1">
-          <ul id="nav-items" class="fixed inset-0 -z-10 md:z-20  bg-[#0026577a] md:bg-transparent flex flex-col  backdrop-blur-xl md:backdrop-blur-0 md:relative md:flex-row text-3xl md:text-sm items-center justify-center gap-8 text-gray-300 font-semibold hidden md:flex">
-            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Home</a>
-            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Support</a>
-            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Contact Us</a>
-            <a class="hover:underline hover:text-white transition-colors duration-200" href="#">Platform</a>
+          <ul id="nav-items" class="navbar-wrapper hidden md:flex">
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#">Support</a>
+            <a class="nav-item" href="#">Contact Us</a>
+            <a class="nav-item" href="#">Platform</a>
             
           </ul>
 
-          <div id="menu-btn" class="flex gap-2 items-center justify-center md:hidden bg-[#002657] md:bg-transparent hover:bg-[#09285b] md:hover:bg-transparent cursor-pointer rounded-sm">
+          <div id="menu-btn" class="menubar">
            <div id="menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
@@ -191,7 +205,7 @@
 
         </nav>
 
-        <div class="flex items-center gap-4 md:gap-6">
+        <div class="socials">
           <a href="#">
             <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.45457 1.25887C2.84121 1.21585 3.2198 1.39079 3.43762 1.7131C4.97011 3.98085 6.82006 4.93057 8.87709 5.1552C8.9827 4.27524 9.22486 3.4065 9.6755 2.64289C10.3365 1.52251 11.4064 0.700711 12.9302 0.402947C15.0356 -0.00850654 16.6331 0.76157 17.5575 1.69928L19.4349 1.35848C19.836 1.28569 20.2427 1.45227 20.4775 1.7854C20.7122 2.11853 20.7323 2.55764 20.5289 2.91081L18.7125 6.06467C18.8528 10.6307 17.5675 13.81 14.8511 15.9908C13.4102 17.1475 11.3536 17.7972 9.09885 17.9893C6.82647 18.1829 4.26034 17.921 1.712 17.1623C1.26492 17.0293 0.959857 16.6164 0.963951 16.15C0.968035 15.6835 1.28028 15.276 1.72962 15.1508C3.01504 14.7925 3.99359 14.482 4.87954 13.9356C3.62857 13.263 2.70881 12.3875 2.05981 11.3914C1.15778 10.007 0.828664 8.46719 0.768983 7.07962C0.709312 5.6922 0.916479 4.40854 1.13244 3.48243C1.25538 2.95524 1.39852 2.4257 1.59464 1.92015C1.73708 1.55579 2.06795 1.3019 2.45457 1.25887Z" fill="#33CCFF"></path></svg>
           </a>
@@ -206,7 +220,7 @@
       </div>
 
 
-    </section>
+    </footer>
 
 
   </div>
