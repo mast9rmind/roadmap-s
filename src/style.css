@@ -47,10 +47,10 @@
   }
 
   .footer{
-    @apply w-[95%] flex  items-center justify-between mx-auto gap-4
+    @apply w-[95%] flex  items-center justify-between mx-auto md:gap-4 gap-2
   }
   .socials{
-    @apply flex items-center gap-4 md:gap-6
+    @apply flex items-center gap-1 md:gap-6
   }
 
   .navbar-wrapper{
