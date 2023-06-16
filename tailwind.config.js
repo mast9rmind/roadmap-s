@@ -10,6 +10,7 @@ module.exports = {
         "secondary-op":"#0026577a",
         "secondary-dark":"#002657",
         "secondary-light":"#09285b",
+        "border-color":"#203B81",
       },
       gridTemplateColumns: {
         // added new column grid 

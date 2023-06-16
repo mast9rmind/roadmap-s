@@ -39,7 +39,7 @@
   }
 
   .main-wrapper{
-    @apply w-11/12 grid grid-cols-mobile-col md:grid-cols-tablet-col xl:grid-cols-desktop-col text-center justify-center gap-10 md:gap-6 xl:gap-5 pb-40
+    @apply w-[95%] grid grid-cols-mobile-col md:grid-cols-tablet-col xl:grid-cols-desktop-col text-center justify-center gap-10 md:gap-6 xl:gap-5 pb-40
   }
 
   .footer-wrapper{
@@ -47,7 +47,7 @@
   }
 
   .footer{
-    @apply w-11/12 flex  items-center justify-between mx-auto gap-4
+    @apply w-[95%] flex  items-center justify-between mx-auto gap-4
   }
   .socials{
     @apply flex items-center gap-4 md:gap-6
@@ -77,13 +77,13 @@
     @apply before:bg-image-border-gradiant before:absolute before:-top-1/2 before:-left-1/2 before:w-[200%] before:h-[200%] before:-z-10 before:bg-slate-900 before:bg-no-repeat before:bg-50% before:bg-right before:animate-spin-slow
   }
   .image-outer-wrapper{
-    @apply w-full h-40 overflow-hidden rounded-lg p-[2px]  border border-[#203B81] scale-105 relative 
+    @apply w-full h-40 overflow-hidden rounded-lg p-[2px]  border border-border-color scale-105 relative 
   }
   .image-wrapper{
-    @apply w-full h-full  border-2 border-primary rounded-md
+    @apply w-full h-full bg-primary rounded-md p-[2px]
   }
   .active-image-wrapper{
-    @apply -translate-y-4 
+    @apply -translate-y-4 [&>div]:border-2 [&>div]:border-transparent [&>div]:p-[1px] 
   }
 
   .card-title{
