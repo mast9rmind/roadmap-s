@@ -586,6 +586,7 @@ body{
   grid-template-columns: repeat(1, minmax(150px, 250px));
   justify-content: center;
   gap: 2.5rem;
+  overflow-x: hidden;
   padding-bottom: 10rem;
   text-align: center;
 }
@@ -968,12 +969,6 @@ body{
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.scale-50 {
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-75 {
