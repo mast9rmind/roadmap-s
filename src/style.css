@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
 
 @layer base{
   ::-webkit-scrollbar {
@@ -17,7 +17,8 @@
     background-color: #343434;
   }
   body{
-    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -38,7 +39,7 @@
   }
 
   .main-wrapper{
-    @apply w-11/12 grid grid-cols-xm-col lg:grid-cols-lg-col text-center justify-center gap-10 lg:gap-4 pb-40
+    @apply w-11/12 grid grid-cols-mobile-col md:grid-cols-tablet-col xl:grid-cols-desktop-col text-center justify-center gap-10 md:gap-6 xl:gap-5 pb-40
   }
 
   .footer-wrapper{
@@ -53,11 +54,11 @@
   }
 
   .navbar-wrapper{
-    @apply fixed inset-0 -z-10 md:z-20  bg-secondary-op md:bg-transparent flex flex-col  backdrop-blur-xl md:backdrop-blur-0 md:relative md:flex-row text-3xl md:text-sm items-center justify-center gap-8 text-gray-300 font-semibold
+    @apply fixed left-1/2 w-full -translate-x-1/2 top-0 bottom-14 z-50 md:z-20 bg-secondary-op  md:bg-transparent flex flex-col backdrop-blur-xl md:backdrop-blur-0 md:relative md:flex-row text-3xl md:text-sm items-center justify-center gap-8 text-gray-300 font-semibold
   }
 
   .menubar{
-    @apply flex gap-2 items-center justify-center md:hidden bg-secondary-dark md:bg-transparent hover:bg-secondary-light md:hover:bg-transparent cursor-pointer rounded-sm
+    @apply flex gap-2 items-center justify-center md:hidden bg-secondary-dark md:bg-transparent hover:bg-secondary-light md:hover:bg-transparent cursor-pointer rounded-md py-[2px]
   }
   .nav-item{
     @apply hover:underline hover:text-white transition-colors duration-200
