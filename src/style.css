@@ -80,7 +80,7 @@
     @apply w-full h-40 overflow-hidden rounded-lg p-[2px]  border border-[#203B81] scale-105 relative 
   }
   .image-wrapper{
-    @apply w-full h-full  border-2 border-primary rounded-md
+    @apply w-full h-full border-2 border-transparent rounded-md p-[1px] bg-primary
   }
   .active-image-wrapper{
     @apply -translate-y-4 

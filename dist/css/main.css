@@ -801,8 +801,10 @@ body{
   width: 100%;
   border-radius: 0.375rem;
   border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(1 20 44 / var(--tw-border-opacity));
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 20 44 / var(--tw-bg-opacity));
+  padding: 1px;
 }
 
 .active-image-wrapper {
